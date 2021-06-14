@@ -1,0 +1,37 @@
+
+<h1> All Student Details </h1>
+
+
+<table border="1" cellspacing="10">
+	<tr class="ftr">
+		<th> ID </th>
+		<th> Name </th>
+		<th> School Name </th>
+		<th> Address </th>
+		<th> Email </th>
+		<th> Phone </th>
+		<th> Password </th>
+		<th colspan="2"> Action </th>
+
+	</tr>
+
+	{% for i in stdlist%}
+	
+	<tr>
+		<td>{{i[0]}}</td>	
+		<td>{{i[1]}}</td>	
+		<td>{{i[2]}}</td>	
+		<td>{{i[3]}}</td>	
+		<td>{{i[4]}}</td>	
+		<td>{{i[5]}}</td>	
+		<td>{{i[6]}}</td>
+		<td><a href="deleteStd?id={{i[0]}}">Delete</a></td>	
+		<td><a href="editStd?id={{i[0]}}">Edit</a></td>	
+	</tr>
+
+	{%endfor%}
+</table>
+
+
+<h2><a href="/">Home</a></h2>
+

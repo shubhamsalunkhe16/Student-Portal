@@ -1,0 +1,50 @@
+<html>
+
+<body>
+
+<h1>Edit Form</h1>
+
+<form action="updateStd" method="POST">
+	<table border="1" cellspacing="10">
+		<tr>
+			<td>Id</td>
+			<td><input type="text" name="id" value="{{s[0]}}"></td>
+		</tr>
+
+		<tr>
+			<td>Name</td>
+			<td><input type="text" name="name" value="{{s[1]}}"></td>
+		</tr>
+		<tr>
+			<td>School Name</td>
+			<td><input type="text" name="schoolname" value="{{s[2]}}"></td>
+		</tr>
+		<tr>
+			<td>Address</td>
+			<td><input type="text" name="address" value="{{s[3]}}"></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="email" name="email" value="{{s[4]}}"></td>
+		</tr>
+		<tr>
+		<td>Phone</td>
+			<td><input type="text" name="phone" value="{{s[5]}}"></td>
+		</tr>
+
+		<tr>
+			<td> Password</td>
+			<td> <input type="password" name="password" value="{{s[6]}}"> </td>
+		</tr>
+
+		<tr>
+			<td><input type="submit" value="Update" ></td>
+			<td><input type="reset"></td>
+		</tr>
+	</table>
+</form>
+
+<h2><a href="/">Home</a></h2>
+</body>
+
+</html>

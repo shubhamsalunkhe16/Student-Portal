@@ -1,0 +1,38 @@
+
+<h1> All Student Details </h1>
+
+
+<table border="1" cellspacing="10">
+	<tr class="ftr">
+		<th> ID </th>
+		<th> Name </th>
+		<th> School Name </th>
+		<th> Address </th>
+		<th> Email </th>
+		<th> Phone </th>
+		
+		
+
+	</tr>
+
+	{% for i in stdlist%}
+	
+	<tr>
+		<td>{{i[0]}}</td>	
+		<td>{{i[1]}}</td>	
+		<td>{{i[2]}}</td>	
+		<td>{{i[3]}}</td>	
+		<td>{{i[4]}}</td>	
+		<td>{{i[5]}}</td>	
+		
+		
+	</tr>
+
+	{%endfor%}
+</table>
+
+<div>
+<p>if you want to edit record,please <a href="login"><b>Log In<b></p>
+</div>
+<h2><a href="/">Home</a></h2>
+
